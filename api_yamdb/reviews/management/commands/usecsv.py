@@ -2,8 +2,7 @@ import csv
 
 from django.core.management.base import BaseCommand, CommandError
 
-from reviews.models import (Category, Comment, Genre, Review,
-                            Title, User)
+from reviews.models import Category, Comment, Genre, Review, Title, User
 
 PATH_CSV_BASE = 'static/data/'
 
