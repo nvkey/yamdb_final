@@ -36,10 +36,6 @@ jobs:
 
     - name: Test django tests
       run: |
-        # перейти в папку, содержащую manage.py — 
-        # <корневая_папка_api_yamdb>/<папка_проекта>/manage.py
-        cd api_yamdb/
-        # запустить написанные разработчиком тесты
         pytest
 
   # деплой приложения в докер
