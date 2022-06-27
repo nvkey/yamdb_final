@@ -3,7 +3,6 @@ from django.utils import timezone
 from rest_framework import serializers
 from rest_framework.permissions import SAFE_METHODS
 from rest_framework.relations import SlugRelatedField
-
 from reviews.models import Category, Comment, Genre, Review, Title
 
 

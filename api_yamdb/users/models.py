@@ -1,7 +1,6 @@
+import users.constants as cnst
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-
-import users.constants as cnst
 
 
 class User(AbstractUser):

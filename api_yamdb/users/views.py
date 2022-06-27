@@ -7,11 +7,11 @@ from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
-
-from api_yamdb.settings import MAIL
 from users.models import User
 from users.permissions import AdminUser
 from users.serializers import UserAuthSerializer, UserLogInSerializer
+
+from api_yamdb.settings import MAIL
 
 
 @api_view(['POST'])

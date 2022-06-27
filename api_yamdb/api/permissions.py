@@ -1,6 +1,5 @@
-from rest_framework import permissions
-
 import users.constants as cnst
+from rest_framework import permissions
 
 
 class OnlyAuthorOrStaffAccessPermission(permissions.BasePermission):
