@@ -1,9 +1,6 @@
 name: Yamdb API workflow
 
-on:
-  push:
-    branches:
-      - master
+on: [push] 
 
 jobs:
   tests:
