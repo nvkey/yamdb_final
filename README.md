@@ -37,7 +37,10 @@ docker compose exec web python manage.py createsuperuser
 
 Панель администратора доступна по адресу http://127.0.0.1/admin/.
 
-Рабочая версия доступна по адресу http://130.193.55.6/redoc/ или http://nvkey.ddns.net/redoc/
+Рабочая версия доступна по адресам:
+http://130.193.55.6/redoc/
+http://nvkey.ddns.net/redoc/
+http://130.193.55.6/api/v1/
 
 Остановка docker-compose:
 ``` bash
