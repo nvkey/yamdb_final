@@ -7,7 +7,7 @@ SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['130.193.55.6', 'localhost', 'nvkey.ddns.net']
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'users',
     'api',
     'reviews',
+    'rest_framework',
     'rest_framework_simplejwt',
     'rest_framework.authtoken',
 ]
