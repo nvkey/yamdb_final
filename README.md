@@ -14,18 +14,18 @@ cd infra_sp2/infra
 
 Запуск docker-compose:
 ``` bash
-docker-compose up -d --build 
+docker compose up -d --build 
 ```
 
 Выполнить миграции и сформировать статику:
 ``` bash
-docker-compose exec web python manage.py collectstatic --no-input 
-docker-compose exec web python manage.py migrate
+docker compose exec web python manage.py collectstatic --no-input 
+docker compose exec web python manage.py migrate
 ```
 
-Заполнить базу данных:
+Заполнить базу данных тестовыми данными:
 ``` bash
-docker-compose exec web python manage.py usecsv
+docker compose exec web python manage.py usecsv
 ```
 
 Cоздать учетную запись администратора:
@@ -34,14 +34,15 @@ docker compose exec web python manage.py createsuperuser
 ```
 
 По адресу http://127.0.0.1/redoc/ будет доступна документация для YaMDb API. В документации описано, как должен работать ваш API. Документация представлена в формате Redoc.
-http://127.0.0.1/api/v1/
 Панель администратора доступна по адресу http://127.0.0.1/admin/.
+
 http://127.0.0.1/api/v1/
 
 Рабочая версия доступна по адресам:
-http://130.193.55.6/redoc/
-http://nvkey.ddns.net/redoc/
-http://130.193.55.6/api/v1/
+http://178.154.195.252/admin/
+http://nvkey.ddns.net/admin/
+http://178.154.195.252/api/v1/
+http://nvkey.ddns.net/api/v1/
 
 Остановка docker-compose:
 ``` bash
