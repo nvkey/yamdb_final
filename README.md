@@ -19,8 +19,8 @@ docker-compose up -d --build
 
 Выполнить миграции и сформировать статику:
 ``` bash
-docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py collectstatic --no-input 
+docker-compose exec web python manage.py migrate
 ```
 
 Заполнить базу данных:
@@ -34,8 +34,9 @@ docker compose exec web python manage.py createsuperuser
 ```
 
 По адресу http://127.0.0.1/redoc/ будет доступна документация для YaMDb API. В документации описано, как должен работать ваш API. Документация представлена в формате Redoc.
-
+http://127.0.0.1/api/v1/
 Панель администратора доступна по адресу http://127.0.0.1/admin/.
+http://127.0.0.1/api/v1/
 
 Рабочая версия доступна по адресам:
 http://130.193.55.6/redoc/
