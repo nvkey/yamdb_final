@@ -1,9 +1,6 @@
 name: Yamdb API workflow
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   tests:
@@ -54,6 +51,7 @@ jobs:
             tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
 
   deploy:
+      if: ${{ github.ref == 'refs/heads/main' }}
       runs-on: ubuntu-latest
       needs: build_and_push_to_docker_hub
       steps:
